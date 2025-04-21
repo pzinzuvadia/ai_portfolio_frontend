@@ -1,3 +1,5 @@
 streamlit
 requests
 httpx
+pillow
+nest_asyncio
