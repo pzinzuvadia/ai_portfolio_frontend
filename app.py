@@ -5,7 +5,9 @@ import base64
 import json
 import os
 from PIL import Image
+import asyncio
 import streamlit.components.v1 as components
+
 
 # Set page configuration
 # st.set_page_config(
