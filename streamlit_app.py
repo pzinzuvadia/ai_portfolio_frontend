@@ -1,5 +1,6 @@
 import streamlit as st
 import requests
+import app
 
 st.set_page_config(page_title="AI Portfolio Generator", page_icon="🚀", layout="wide")
 st.title("🚀 AI Portfolio Generator")
@@ -29,3 +30,5 @@ if st.button("Check Backend Again"):
             st.error("❌ Backend returned an error.")
     except Exception as e:
         st.error(f"Could not reach backend: {e}")
+
+app.main()
