@@ -1,8 +1,10 @@
 import streamlit as st
 import requests
-import app
 
 st.set_page_config(page_title="AI Portfolio Generator", page_icon="🚀", layout="wide")
+
+import app
+
 st.title("🚀 AI Portfolio Generator")
 
 # The backend URL on Render
