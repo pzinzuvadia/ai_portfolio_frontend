@@ -1,5 +1,3 @@
-# streamlit_app.py
-
 import streamlit as st
 import requests
 
@@ -11,7 +9,7 @@ BACKEND_URL = "https://auto-resume-portfolio.onrender.com"
 
 st.write("Click the button below to check the backend status:")
 
-# Check on load (optional)
+# Check on load (root path)
 try:
     res = requests.get(f"{BACKEND_URL}/", timeout=3)
     if res.ok:
@@ -21,10 +19,10 @@ try:
 except Exception as e:
     st.warning(f"⚠️ Could not reach backend: {e}")
 
-# Manual check
+# Button check also uses root path
 if st.button("Check Backend Again"):
     try:
-        res = requests.get(f"{BACKEND_URL}/health", timeout=3)
+        res = requests.get(f"{BACKEND_URL}/", timeout=3)
         if res.ok:
             st.success("✅ Backend is healthy!")
         else:
