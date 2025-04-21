@@ -8,12 +8,12 @@ from PIL import Image
 import streamlit.components.v1 as components
 
 # Set page configuration
-st.set_page_config(
-    page_title="AI Portfolio Generator",
-    page_icon="📄",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
+# st.set_page_config(
+#     page_title="AI Portfolio Generator",
+#     page_icon="📄",
+#     layout="wide",
+#     initial_sidebar_state="expanded"
+# )
 
 # API endpoints
 API_URL = "http://0.0.0.0:8000"  # FastAPI backend
