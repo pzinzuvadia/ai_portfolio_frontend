@@ -13,7 +13,7 @@ st.write("Click the button below to check the backend status:")
 
 # Check on load (optional)
 try:
-    res = requests.get(f"{BACKEND_URL}/health", timeout=3)
+    res = requests.get(f"{BACKEND_URL}/", timeout=3)
     if res.ok:
         st.success("✅ Backend is live and responding.")
     else:
