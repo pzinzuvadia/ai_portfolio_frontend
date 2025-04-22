@@ -6,14 +6,14 @@ import asyncio
 import os
 
 # Configure page
-st.set_page_config(
-    page_title="My Portfolios",
-    page_icon="📁",
-    layout="wide"
-)
+# st.set_page_config(
+#     page_title="My Portfolios",
+#     page_icon="📁",
+#     layout="wide"
+# )
 
 # API URL
-API_URL = "http://0.0.0.0:8000"
+API_URL = "https://auto-resume-portfolio.onrender.com"
 
 # Function to make API calls
 async def call_api(endpoint, method="GET", data=None, files=None):
