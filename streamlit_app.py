@@ -3,7 +3,7 @@ import requests
 
 st.set_page_config(page_title="AI Portfolio Generator", page_icon="🚀", layout="wide")
 
-import app
+import my_portfolios
 
 st.title("🚀 AI Portfolio Generator")
 
@@ -33,4 +33,4 @@ if st.button("Check Backend Again"):
     except Exception as e:
         st.error(f"Could not reach backend: {e}")
 
-app.main()
+my_portfolios.main()
